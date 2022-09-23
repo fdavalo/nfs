@@ -3,6 +3,8 @@ apiVersion: v1
 metadata:
   name: nfs-pvc
   namespace: nfs-app
+  labels:
+    appname: nfs-app  
 spec:
   accessModes:
     - ReadWriteMany
